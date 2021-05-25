@@ -1,0 +1,25 @@
+{
+  "name": "note-tracker",
+  "version": "1.0.0",
+  "description": "This app will help to set and track a note",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/izaack89/note-tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/izaack89/note-tracker/issues"
+  },
+  "homepage": "https://github.com/izaack89/note-tracker#readme"
+}
