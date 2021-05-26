@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/izaack89/note-tracker/issues"
   },
-  "homepage": "https://github.com/izaack89/note-tracker#readme"
+  "homepage": "https://github.com/izaack89/note-tracker#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

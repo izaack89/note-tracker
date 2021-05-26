@@ -1,11 +1,11 @@
 // LOAD DATA
 const fs = require('fs');
-const path = require('path');
-const notesData = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/db.json'), 'utf8'));;
-
 // ROUTING
 
-module.exports = (app) => {
+module.exports = (app, path) => {
+    
+    const notesData = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/db.json'), 'utf8'));;
+    console.log(notesData);
     // API GET Requests
     // Display the notes    
     app.get('/api/notes', (req, res) => res.json(notesData));
