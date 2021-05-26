@@ -1,6 +1,7 @@
 // LOAD DATA
-
-const notesData;
+const fs = require('fs');
+const path = require('path');
+const notesData = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/db.json'), 'utf8'));;
 
 // ROUTING
 
