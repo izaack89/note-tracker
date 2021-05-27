@@ -47,6 +47,13 @@ module.exports = (app, path) => {
         });
         // I delete the note with the position by using the splice method 
         notesData.splice(position, 1);
+        // I save the notes into the Json File
+        fs.writeFile(path.join(__dirname, '../data/db.json'), JSON.stringify(notesData), function (error, data) {
+            if (error) {
+                return error
+            }
+            res.json(newNotes);
+        });
         // return the notes
         res.json(notesData);
     });
