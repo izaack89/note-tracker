@@ -13,14 +13,13 @@ module.exports = (app, path) => {
     // API POST Requests
     // Save the Notes into the JSON file 
     app.post('/api/notes', (req, res) => {
-        // save the new note into a variable 
-        // const newNotes = req.body;
-        // I set a push to the variable that have the information of the json
+        // save the new note into a variable         
         const newNotes = {
-            id: uuid.v1(),
+            id: uuid.v1(), // create an unique id
             title: req.body.title,
             text: req.body.text, 
         };
+        // I set a push to the variable that have the information of the json
         notesData.push(newNotes);
         // I save the new notes into the Json File
         fs.writeFile(path.join(__dirname, '../data/db.json'), JSON.stringify(notesData), function (error, data) {
