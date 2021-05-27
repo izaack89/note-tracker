@@ -1,6 +1,3 @@
-// DEPENDENCIES
-
-
 // ROUTING
 
 module.exports = (app,path) => {

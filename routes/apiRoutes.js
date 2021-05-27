@@ -39,7 +39,6 @@ module.exports = (app, path) => {
         let position = 0;
         let foundId = false;
         notesData.forEach(note => {
-            console.log(note.id)
             if (deletedNoteId ==note.id) {
                 foundId = true;
             }else if (!foundId) {
