@@ -37,7 +37,7 @@ This project is licensed under the MIT license.
 
 ## [Note Tracker GitHub Code](https://github.com/izaack89/note-tracker)
 
-## [Note Tracker Live Server](https://github.com/izaack89/note-tracker)
+## [Note Tracker Live Server](https://powerful-scrubland-38710.herokuapp.com/)
 
 ## Note Tracker References
 
