@@ -35,7 +35,7 @@ module.exports = (app, path) => {
     app.delete('/api/notes/:id', (req, res) => {
         // save the note that will be deleted into a variable
         const deletedNoteId = req.params.id;
-        // I set a push to the variable that have the information of the json
+        // I create some variables to get the position index of the id
         let position = 0;
         let foundId = false;
         notesData.forEach(note => {
@@ -46,7 +46,9 @@ module.exports = (app, path) => {
                 position++;
             }
         });
+        // I delete the note with the position by using the splice method 
         notesData.splice(position, 1);
+        // return the notes
         res.json(notesData);
     });
 
