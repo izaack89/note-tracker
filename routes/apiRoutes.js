@@ -1,5 +1,6 @@
 // LOAD DATA
 const fs = require('fs');
+const uuid = require('uuid');
 // ROUTING
 
 module.exports = (app, path) => {
@@ -17,7 +18,7 @@ module.exports = (app, path) => {
         // const newNotes = req.body;
         // I set a push to the variable that have the information of the json
         const newNotes = {
-            id: (notesData.length) + 1,
+            id: uuid.v1(),
             title: req.body.title,
             text: req.body.text, 
         };
