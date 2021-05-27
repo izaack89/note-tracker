@@ -1,15 +1,14 @@
-// LOAD DATA
+// LOAD DEPENDENCIES
 const fs = require('fs');
 const uuid = require('uuid');
-// ROUTING
 
+// Export the function
 module.exports = (app, path) => {
     //Read the json file and display the information
     const notesData = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/db.json'), 'utf8'));
     // API GET Requests
-    // Display the notes    
+    // Display the notes that are stored on the Json file   
     app.get('/api/notes', (req, res) => res.json(notesData));
-
 
     // API POST Requests
     // Save the Notes into the JSON file 
