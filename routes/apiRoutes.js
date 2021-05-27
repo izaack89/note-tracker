@@ -52,10 +52,9 @@ module.exports = (app, path) => {
             if (error) {
                 return error
             }
-            res.json(newNotes);
-        });
         // return the notes
-        res.json(notesData);
+            res.json(notesData);
+        });
     });
 
 };
